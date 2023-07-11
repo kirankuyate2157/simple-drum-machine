@@ -1,0 +1,73 @@
+body {
+  background: rgb(238, 174, 202);
+  background: -moz-linear-gradient(
+    266deg,
+    rgba(238, 174, 202, 1) 2%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    266deg,
+    rgba(238, 174, 202, 1) 2%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: linear-gradient(
+    266deg,
+    rgba(238, 174, 202, 1) 2%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+#drum-machine {
+  background-color: #f1f1f1;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+#display {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.drum-pad {
+  border: 1px solid #333;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 227, 227);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#display {
+  height: 20px;
+}
+.drum-pad:hover {
+  background-color: rgb(22, 140, 140);
+}
+
+.clip {
+  display: none;
+}
